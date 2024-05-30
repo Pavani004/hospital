@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Medical Report</title>
+<style>
+    body{
+        font-size: 20px;
+        background: #f2f3f2;
+    }
+    .responsive{
+        width: 1000%;
+        height: 190px;
+    }
+    form{
+        text-align: left;
+       
+    }
+    .box{
+        background: white;
+        width: 900px;
+        padding: 25px;
+        margin: 50px auto;
+        border-top: 5px solid orange;
+        box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+    }
+    .box h2{
+        font-size: 24px;
+        line-height: 24px;
+        padding: 30px;
+        text-align: center;
+    }
+    @media (max-width:480px){
+        .box{
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\dell\Downloads\Your paragraph text (10).png" alt="nature" class="responsive">
+      </div>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">MEDICAL REPORT</h1>
+            <div class="box">
+                <h2>MEDICAL CAMP - MEDCHAL MALKAJGIRI <br> Medical Report</h2>
+            <form action="#" method="post">
+                <label for="date"><b>Date:</b></label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <div class="input-name">
+                <label for="name">Name:</label><br>
+                <label for="name">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="name" name="name"  placeholder="Enter patient's name" required>
+                <span>
+                    <label for="name">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="name" name="name" placeholder="Enter last name">
+                </span><br><br>
+            </div>
+                <div class="age">
+                <label for="age"><b>Age:</b></label><br>
+                <input type="number" id="age" name="age" placeholder="Enter patient's age" required><br><br>
+            </div>
+                <label for="contact"><b>Contact:</b></label><br>
+                <input type="number" name="contact" placeholder="Enter patient's contact"  required><br><br>
+        
+                <label for="type"><b>Type of Check-up:</b></label><br>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Select type of check-up</option>
+                    <option value="Blood Test">Blood Test</option>
+                    <option value="Eye Check-up">Eye Check-up</option>
+                    <option value="General Check-up">General Check-up</option>
+                    <option value="Gynaecology">Gynaecology</option>
+                </select><br><br>
+        
+                <label for="bloodTest"> <b>Blood Test:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Normal Range Results</b></label><br>
+                <label for="bloodTest">RBC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="rbc" name="rbc_count" placeholder="Your rbc count"><label for="bt"> Male: 4.7 to 6.1 million cells per microliter (cells/mcL)&nbsp;Female: 4.2 to 5.4 million cells/mcL</label>
+                <br><br><hr>
+                
+                <label for="bloodTest">WBC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="wbc" name="wbc_count" placeholder="Your wbc count"><label for="bt"> 4500-11,000/mm3</label>
+                <br><br><hr>
+                
+                <label for="bloodTest">Haemoglobin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="Hemoglobin" name="hemo" placeholder="Your hgb"><label for="bt"> 	Male: 13.5-17.5 g/dL &nbsp;Female: 12.0-16.0 g/dL</label>
+                <br><br>
+
+                <label for="bloodTest"> <b>Thyroid:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Normal Range Results</b></label><br>
+                <label for="thyroid">T3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="Thyroid" name="t3" placeholder="Your t3"><label for="thy"> 1.2–2.8 nmol/L</label>
+                <br><br><hr>
+                <label for="thyroid">T4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="Thyroid" name="t4" placeholder="Your t4"><label for="thy"> 77–155 nmol/l</label>
+                <br><br><hr>
+                <label for="thyroid">TSH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="Thyroid" name="tsh" placeholder="Your tsh"><label for="thy">0.5 to 5.0 mIU/L</label>
+                <br><br>
+
+                <label for="eyeCheckup"><b>Eye Check-up:</b></label><br>
+                <label for="eyeCheckup">Left eye:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="eyeCheckup" name="left" placeholder="Your left Eye sight"><br><hr>
+                <label for="eyeCheckup">Right eye:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="eyeCheckup" name="right" placeholder="Your right Eye sight"><br><br>
+               
+                <label for="general"><b>General check-up:</b></label><br>
+                <label for="general">Weight:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="general" name="wt" placeholder="Your weight"><br><hr>
+                <label for="general">BP:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="general" name="bp" placeholder="Your BP"><br><br>
+               
+                <label for="Gynaecology"><b>Gynaecology:</b></label><br>
+                <input type="text" id="Gynaecology" name="Gynaecology" placeholder="Doctor's suggestions"><br><br>
+                
+                <label for="Medicine"><b>Medicine:</b></label><br>
+                <input type="text" id="Medicine" name="Medicine" placeholder="Medicine prescribed"><br><br>
+               <button><input type="submit" value="Submit"></button> 
+            </form>
+            </div>
+        </div>
+</body>
+</html>
